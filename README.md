@@ -17,8 +17,8 @@ Clone the repo or download the zip.
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/itinerary-planner-ml.git
-cd itinerary-planner-ml
+git clone https://github.com/Sunidhikini15/TravelGenie.git
+cd  TravelGenie
 Create and activate a virtual environment (optional but recommended).
 
 bash

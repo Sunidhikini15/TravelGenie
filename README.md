@@ -1,109 +1,101 @@
-This project is a machine learning-based travel itinerary planner that recommends flights, hotels, and local attractions based on user inputs like source, destination, and budget. It uses classification and regression models trained on travel-related data to suggest optimized travel plans.
 
-🗂️ Project Structure
+# ✈️ Smart Itinerary Planner 🧳
 
-File/Folder	Description
-data/	Contains CSV files for flights, hotels, and attractions
-models/	Stores trained ML models (pickle format)
-scripts/	Python scripts for data preprocessing, training, testing, and prediction logic
-utils/helpers.py	Utility functions for data loading, filtering, and processing
-app.py	Main interactive script for user input and end-to-end planning
-requirements.txt	Python package dependencies
-README.md	This file
-🔧 Setup Instructions
-Clone the repo or download the zip.
+-> Your ML-powered assistant for personalized travel planning and budget-based recommendations 🌍
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/itinerary-planner-ml.git
+## 📑 Table of Contents
+
+- [🌟 Introduction](#-introduction)
+- [💪 Features](#-features)
+- [⚙ Technologies Used](#-technologies-used)
+- [🚀 Getting Started](#-getting-started)
+    - [📦 Installation](#-installation)
+    - [▶ Running the App](#-running-the-app)
+
+---
+
+## 🌟 Introduction
+
+Smart Itinerary Planner is an interactive, machine learning-based application that helps users plan their trips by recommending suitable flights, hotels, and local attractions—all based on user budget and preferences. Built with Jupyter Notebook and ipywidgets, this tool is ideal for students, researchers, or hobbyists exploring how AI can enhance real-world travel planning.
+
+---
+
+## 💪 Features
+
+* 🛫 Flight Recommendations: Suggests top flights under your budget using filtering and fuzzy city matching.
+* 🏨 Hotel Classifier: Uses K-Nearest Neighbors to categorize hotels into Budget, Mid-range, or Luxury.
+* 🗺️ City Attraction Suggestion: Recommends places to visit based on city and budget using Random Forest.
+* 💸 Budget-Conscious Planning: Tailored suggestions based on user-specified constraints.
+* 🤖 Pre-trained ML Models: No need to train every time—just load and go!
+* 🎛️ Interactive Interface: Built with ipywidgets for an easy Jupyter Notebook experience.
+* 📂 CSV-Based Input: Uses real-world travel datasets (Goibibo, Stayzilla, etc.).
+* 🔄 Modular Codebase: Easy to plug in APIs or improve individual modules.
+---
+
+## ⚙ Technologies Used
+
+* ML Models:
+  * scikit-learn 🧠
+  * K-Nearest Neighbors (KNN)
+  * Random Forest Classifier
+* Data Processing:
+  * pandas 📊
+  * numpy 🔢
+* Interface:
+  * ipywidgets 🧩
+  * Jupyter Notebook 📓
+* Utilities:
+  * joblib 💾 (for model serialization)
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Installation
+
+#### 🔧 Prerequisites
+
+Make sure you have the following installed:
+
+* Python 3.8+ 🐍
+* Jupyter Notebook or JupyterLab
+* pip 📦
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Sunidhikini15/TravelGenie.git
 cd itinerary-planner-ml
-Create and activate a virtual environment (optional but recommended).
+```
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies.
+2. Install the required packages:
 
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
-🚀 Running the Project
-1. Preprocess the data
-bash
-Copy
-Edit
-python scripts/preprocess_data.py
-Cleans and prepares the datasets.
+```
 
-2. Train Hotel Classifier (KNN)
-bash
-Copy
-Edit
-python scripts/train_hotel_classifier.py
-Trains a K-Nearest Neighbors classifier to classify hotels based on amenities and price.
+---
 
-3. Train Budget Prediction Model
-bash
-Copy
-Edit
-python scripts/train_budget_model.py
-Trains a regression model to estimate total budget based on user and city parameters.
+### ▶ Running the App
 
-4. Test Models (Optional)
-bash
-Copy
-Edit
-python scripts/test_models.py
-Evaluates accuracy and performance of the models on test datasets.
+1. Launch Jupyter Notebook:
 
-5. Run the Itinerary Planner
-bash
-Copy
-Edit
-python app.py
-Launches the interactive planner where user can input:
+```bash
+jupyter notebook
+```
 
-Source and destination
+2. Open the main notebook (e.g. `itinerary_planner.ipynb`).
 
-Number of days
+3. Enter:
+   - Source and destination cities
+   - Flight and hotel budget
+   - Number of people
 
-Preferred type of hotel
+4. Get your personalized travel plan with:
+   - 🛫 Flights
+   - 🏨 Hotels
+   - 🗺️ Attractions
 
-Budget
+---
 
-And get recommendations for:
-
-Best-matching flights
-
-Suitable hotels
-
-Local attractions
-
-Estimated trip cost
-
-🧠 Models Used
-KNN for Hotel Classification
-
-Linear Regression / Random Forest for Budget Estimation
-
-Rule-based filtering for Flights and Attractions
-
-📈 Future Enhancements
-Integration with real-time flight/hotel APIs (Skyscanner, Amadeus)
-
-Personalized recommendations using user history
-
-Map-based UI
-
-Mobile version with GPS-aware recommendations
-
-
-
-
-
-
-
+Happy Traveling! 🚀
